@@ -1,0 +1,98 @@
+.mainHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 0px 20px;
+    height: 70px;
+}
+
+.mainHeader>img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.mainHeader>h4 {
+    font-size: 26px;
+    color: #6B7280;
+}
+
+.mainHeader>div {
+    position: relative;
+}
+
+.threeDot {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    align-items: flex-end;
+}
+
+.threeDot>div {
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background-color: #9a9aa1;
+}
+
+.dropDown {
+    position: absolute;
+    width: 190px;
+    background-color: #c2c2c9;
+    left: -190px;
+    top: 40px;
+    border-radius: 16px;
+    height: 0px;
+    overflow: hidden;
+    transition: ease-in-out 300ms;
+}
+
+.dropDown img {
+    width: 20px;
+    height: 20px;
+}
+
+.dropDown>div {
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #9a9a9c;
+    cursor: pointer;
+    height: 45px;
+    padding: 0px 15px;
+}
+
+.dropDown>div:hover {
+    background-color: rgb(169, 170, 177);
+}
+
+.dropDown>div:last-child {
+    border: none;
+    padding-bottom: 0px;
+    color: #E02626;
+}
+
+.showDiv {
+    height: 185px;
+}
+
+.threeDotRow {
+    flex-direction: row;
+    align-items: center;
+}
+
+@media (max-width: 700px) {
+    .mainHeader {
+        border-radius: 0px;
+    }
+}

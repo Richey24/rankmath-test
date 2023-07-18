@@ -1,0 +1,100 @@
+.bitcoinMainDiv {
+    width: 75%;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 16px;
+    padding: 10px 20px;
+}
+
+.bitcoinImageDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bitcoinImageDiv>div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 600;
+}
+
+.bitcoinImageDiv>p {
+    color: #a5a5ad;
+    font-weight: 600;
+}
+
+.bitcoinImageDiv>div>img {
+    width: 50px;
+    height: 50px;
+}
+
+.btcAmt {
+    margin-top: 10px;
+    color: rgb(47, 44, 44);
+    font-size: 24px;
+}
+
+.dollarAmt {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: -35px;
+}
+
+.dollarAmt>h4 {
+    font-size: 18px;
+    color: #a5a5ad;
+    font-size: 16px;
+}
+
+.dollarAmt>div {
+    padding: 2px 6px;
+    background-color: #E02626;
+    border-radius: 16px;
+    font-weight: 500;
+    color: white;
+    font-size: 12px;
+}
+
+.downImageDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.downImage {
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.sortDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    height: 0px;
+    overflow: hidden;
+    transition: ease-in-out 300ms;
+}
+
+.sortDiv>p {
+    font-weight: 500;
+    color: #949497;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.activeSort {
+    color: white !important;
+    background-color: #6B7280;
+    padding: 2px 10px;
+    border-radius: 16px;
+}
+
+.showSortDiv {
+    height: 55px;
+    margin-bottom: -20px
+}

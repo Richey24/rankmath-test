@@ -1,6 +1,6 @@
 import "./Buy.css"
 import blueDollar from "../../img/blue-dollar.png"
-import pinkDollar from "../../img/pink-dollar.png"
+import pinkDollar from "../../img/green-dollar.png"
 
 const Buy = () => {
     return (

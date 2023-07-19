@@ -38,7 +38,7 @@ const Graph = () => {
                     <XAxis axisLine={false} dataKey="name" tick={false} />
                     <YAxis axisLine={false} tick={false} />
                     <Tooltip />
-                    <Area type="monotone" dataKey="USD" stroke="#F5B3C4" fill="#F5B3C4" />
+                    <Area type="monotone" dataKey="USD" stroke="#F0A236" fill="#FFF6ED" />
                 </AreaChart>
             </ResponsiveContainer>
         </div>

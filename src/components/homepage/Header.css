@@ -51,6 +51,7 @@
     height: 0px;
     overflow: hidden;
     transition: ease-in-out 300ms;
+    z-index: 2;
 }
 
 .dropDown img {

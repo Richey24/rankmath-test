@@ -1,10 +1,14 @@
 .bitcoinMainDiv {
-    width: 75%;
+    width: 70%;
     background-color: white;
     margin: 0 auto;
     margin-top: 20px;
     border-radius: 16px;
-    padding: 10px 20px;
+    padding: 20px 30px;
+    filter: drop-shadow(0px 59px 55.5px rgba(154, 155, 176, 0.17));
+    height: 145px;
+    overflow: hidden;
+    transition: ease-in-out 300ms;
 }
 
 .bitcoinImageDiv {
@@ -17,13 +21,13 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    font-weight: 600;
-    color: #9AA3A8;
+    font-weight: bold;
+    color: #4c5968;
 }
 
 .bitcoinImageDiv>p {
-    color: #DCDCDC;
-    font-weight: 600;
+    color: #aeb8c4;
+    font-weight: 400;
 }
 
 .bitcoinImageDiv>div>img {
@@ -33,28 +37,30 @@
 
 .btcAmt {
     margin-top: 10px;
-    color: #5D646A;
+    color: #4c5968;
     font-size: 24px;
+    font-weight: bold;
 }
 
 .dollarAmt {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    margin-top: -35px;
+    align-items: center;
+    margin-top: -30px;
 }
 
 .dollarAmt>h4 {
     font-size: 18px;
-    color: #D4DADA;
+    color: #aeb8c4;
     font-size: 16px;
+    font-weight: 400;
 }
 
 .dollarAmt>div {
-    padding: 2px 6px;
-    background-color: #E63262;
+    padding: 4px 12px;
+    background-color: #ee225d;
     border-radius: 16px;
-    font-weight: 500;
+    font-weight: 600;
     color: white;
     font-size: 12px;
 }
@@ -62,12 +68,38 @@
 .downImageDiv {
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 
 .downImage {
     width: 40px;
     height: 25px;
+}
+
+.fxButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.fxButton>button {
+    width: 45%;
+    height: 30px;
+    border-radius: 26px;
+    border: none;
+    outline: none;
+    color: white;
     cursor: pointer;
+    font-weight: 600;
+}
+
+.fxButton>button:first-child {
+    background-image: linear-gradient(0deg, #1d71f1 0%, #17c7fb 100%);
+}
+
+.fxButton>button:last-child {
+    background-image: linear-gradient(0deg, #fa23a2 0%, #ff677c 100%);
 }
 
 .sortDiv {
@@ -76,26 +108,24 @@
     align-items: center;
     width: 80%;
     margin: 0 auto;
-    height: 0px;
-    overflow: hidden;
-    transition: ease-in-out 300ms;
+    height: 55px;
+    margin-bottom: -20px;
 }
 
 .sortDiv>p {
     font-weight: 500;
-    color: #949497;
+    color: #aeb8c4;
     cursor: pointer;
     font-size: 14px;
 }
 
 .activeSort {
     color: white !important;
-    background-color: #ADB3BF;
-    padding: 2px 10px;
+    background-color: #aeb8c4;
+    padding: 1.5px 10px 2px 10px;
     border-radius: 16px;
 }
 
-.showSortDiv {
-    height: 55px;
-    margin-bottom: -20px
+.showFx {
+    height: 200px;
 }

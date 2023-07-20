@@ -1,16 +1,14 @@
 import "./Buy.css"
-import blueDollar from "../../img/blue-dollar.png"
-import pinkDollar from "../../img/green-dollar.png"
 
 const Buy = () => {
     return (
         <div className="buyMainDiv">
             <div>
-                <img src={blueDollar} alt="blue dollar" />
+                <div className="buySign">$</div>
                 Buy BTC
             </div>
             <div>
-                <img src={pinkDollar} alt="pink dollar" />
+                <div className="sellSign">$</div>
                 Sell BTC
             </div>
         </div>

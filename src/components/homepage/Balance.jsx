@@ -6,13 +6,13 @@ import { useState } from "react"
 const Balance = () => {
     const [active, setActive] = useState("week")
 
-    const toggleSortDiv = () => {
-        document.getElementById("sortDiv").classList.toggle("showSortDiv")
+    const toggleFx = () => {
+        document.getElementById("bitcoinMainDiv").classList.toggle("showFx")
     }
 
     return (
         <div>
-            <div className="bitcoinMainDiv">
+            <div id="bitcoinMainDiv" className="bitcoinMainDiv">
                 <div className="bitcoinImageDiv">
                     <div><img src={bitcoinImage} alt="" /> Bitcoin</div>
                     <p>BTC</p>
@@ -22,11 +22,15 @@ const Balance = () => {
                     <h4>$19,152 USD</h4>
                     <div>-2.32%</div>
                 </div>
-                <div className="downImageDiv">
-                    <img onClick={toggleSortDiv} className="downImage" src={downImage} alt="" />
+                <div onClick={toggleFx} className="downImageDiv">
+                    <img className="downImage" src={downImage} alt="" />
+                </div>
+                <div className="fxButton">
+                    <button>Buy</button>
+                    <button>Sell</button>
                 </div>
             </div>
-            <div id="sortDiv" className="sortDiv">
+            <div className="sortDiv">
                 <p onClick={() => setActive("day")} className={active === "day" ? "activeSort" : ""}>Day</p>
                 <p onClick={() => setActive("week")} className={active === "week" ? "activeSort" : ""}>Week</p>
                 <p onClick={() => setActive("month")} className={active === "month" ? "activeSort" : ""}>Month</p>

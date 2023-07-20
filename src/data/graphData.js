@@ -8,13 +8,13 @@ const graphData = [
     {
         name: 'BTC',
         uv: 3000,
-        USD: 3398,
+        USD: 4398,
         amt: 2210,
     },
     {
         name: 'BTC',
         uv: 2000,
-        USD: 3300,
+        USD: 4300,
         amt: 2290,
     },
     {

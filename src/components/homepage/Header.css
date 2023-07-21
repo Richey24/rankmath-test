@@ -32,6 +32,11 @@
     width: 20px;
     height: 20px;
     align-items: flex-end;
+    position: absolute;
+    z-index: 2;
+    right: 4px;
+    top: -8px;
+
 }
 
 .threeDot>div {
@@ -44,7 +49,7 @@
 .dropDown {
     position: absolute;
     width: 190px;
-    background-color: #EAEAEA;
+    background-color: white;
     left: -190px;
     top: 40px;
     border-radius: 16px;
@@ -80,6 +85,7 @@
 .dropDown>div:last-child {
     border: none;
     padding-bottom: 0px;
+    height: 46px;
     color: #E02626;
 }
 
@@ -92,8 +98,12 @@
     align-items: center;
 }
 
-@media (max-width: 700px) {
+.threeDotRow>div {
+    background-color: white;
+}
+
+/* @media (max-width: 700px) {
     .mainHeader {
         border-radius: 0px;
     }
-}
+} */

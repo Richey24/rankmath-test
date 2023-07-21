@@ -2,7 +2,7 @@ const graphData = [
     {
         name: 'BTC',
         uv: 4000,
-        USD: 4400,
+        USD: 4000,
         amt: 2400,
     },
     {
@@ -40,6 +40,12 @@ const graphData = [
         uv: 3490,
         USD: 6500,
         amt: 2100,
+    },
+    {
+        name: 'BTC',
+        uv: 3690,
+        USD: 6800,
+        amt: 2400,
     },
 ];
 

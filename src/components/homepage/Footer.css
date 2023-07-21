@@ -22,8 +22,8 @@
     filter: invert(0%) !important;
 }
 
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
     .mainFooter {
         border-radius: 0px;
     }
-}
+} */

@@ -9,7 +9,8 @@ import {
     ResponsiveContainer,
 } from 'recharts';
 
-const Graph = () => {
+const Graph = ({ num }) => {
+
     return (
         <div className="mainGraphDiv">
             <div className="graphLabel">
@@ -30,7 +31,7 @@ const Graph = () => {
                 <AreaChart
                     width={500}
                     height={200}
-                    data={graphData}
+                    data={graphData.slice(0, num)}
                     syncId="anyId"
                     margin={{
                         top: 20,

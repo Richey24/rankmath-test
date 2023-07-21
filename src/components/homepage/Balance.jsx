@@ -3,11 +3,16 @@ import bitcoinImage from "../../img/Bitcoin.png"
 import downImage from "../../img/down.png"
 import { useState } from "react"
 
-const Balance = () => {
+const Balance = ({ setNum }) => {
     const [active, setActive] = useState("week")
 
     const toggleFx = () => {
         document.getElementById("bitcoinMainDiv").classList.toggle("showFx")
+    }
+
+    const switchSort = (val, num) => {
+        setActive(val)
+        setNum(num)
     }
 
     return (
@@ -31,10 +36,10 @@ const Balance = () => {
                 </div>
             </div>
             <div className="sortDiv">
-                <p onClick={() => setActive("day")} className={active === "day" ? "activeSort" : ""}>Day</p>
-                <p onClick={() => setActive("week")} className={active === "week" ? "activeSort" : ""}>Week</p>
-                <p onClick={() => setActive("month")} className={active === "month" ? "activeSort" : ""}>Month</p>
-                <p onClick={() => setActive("year")} className={active === "year" ? "activeSort" : ""}>Year</p>
+                <p onClick={() => switchSort("day", 2)} className={active === "day" ? "activeSort" : ""}>Day</p>
+                <p onClick={() => switchSort("week", 4)} className={active === "week" ? "activeSort" : ""}>Week</p>
+                <p onClick={() => switchSort("month", 6)} className={active === "month" ? "activeSort" : ""}>Month</p>
+                <p onClick={() => switchSort("year", 8)} className={active === "year" ? "activeSort" : ""}>Year</p>
             </div>
         </div>
     )

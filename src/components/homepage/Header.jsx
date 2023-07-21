@@ -10,6 +10,7 @@ const Header = () => {
     const toggleDropdown = () => {
         document.getElementById("dropDown").classList.toggle("showDiv")
         document.getElementById("threeDot").classList.toggle("threeDotRow")
+        document.getElementById("blurDiv").classList.toggle("showBlur")
     }
 
     return (
